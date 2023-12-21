@@ -3,10 +3,10 @@ use crate::internal::read_write::RW;
 
 pub struct SysTick
 {
-    CTRL: RW<u32>,
-    LOAD: RW<u32>,
-    VAL:  RW<u32>,
-    CALIB: RW<u32>
+    pub CTRL: RW<u32>,
+    pub LOAD: RW<u32>,
+    pub VAL:  RW<u32>,
+    pub CALIB: RW<u32>
 }
 
 pub fn get_systick() -> &'static mut SysTick
