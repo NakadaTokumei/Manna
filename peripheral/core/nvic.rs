@@ -1,5 +1,5 @@
-use crate::macros;
-use crate::internal::RW;
+use crate::get_peri_mem;
+use crate::internal::read_write::RW;
 
 pub struct NVIC
 {
