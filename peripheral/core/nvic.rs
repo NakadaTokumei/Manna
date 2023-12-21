@@ -20,3 +20,8 @@ pub fn get_nvic() -> &'static mut NVIC
 {
     get_peri_mem!(0xe000e100, NVIC)
 }
+
+pub fn get_nvic_stir() -> &'static mut u32
+{
+    get_peri_mem!(0xe000ef00, u32)
+}
