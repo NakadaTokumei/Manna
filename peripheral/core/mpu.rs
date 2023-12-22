@@ -15,7 +15,7 @@ pub struct MPU
     pub RB_RA: [RBAR_RASR; 3]   // 0x0c ~ 0x23
 }
 
-pub fn get_mcu() -> &'static mut MPU
+pub fn get_mpu() -> &'static mut MPU
 {
     get_peri_mem!(0xe000ed90, MPU)
 }
