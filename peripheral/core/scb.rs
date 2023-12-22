@@ -13,7 +13,7 @@ pub struct SCB
     pub SHCRS: RW<u32>,     // 0x24
     pub CFSR: RW<u32>,      // 0x28
     pub HFSR: RW<u32>,      // 0x2c
-    pub _reserved1: u32,    // 0x30
+    _reserved1: u32,    // 0x30
     pub MMAR: RW<u32>,      // 0x34
     pub BFAR: RW<u32>       // 0x38
 }
