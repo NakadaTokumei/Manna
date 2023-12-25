@@ -13,4 +13,4 @@ libmanna.rlib: lib.rs
 	$(RUSTC) $(RUSTC_FLAGS) --emit=link=$@ --emit=obj=manna.o $<
 
 clean:
-	rm *.rlib
+	rm *.rlib *.o
