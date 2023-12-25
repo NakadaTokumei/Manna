@@ -1,5 +1,5 @@
 use crate::get_peri_mem;
-use crate::interal::read_write::RW;
+use crate::internal::read_write::RW;
 
 pub struct CRC
 {
